@@ -32,7 +32,8 @@ export {
   type BugBountyProgram,
   type EmergencyBroadcastSignal,
 } from "./security.js";
-export { type ContainerDigestVerification } from "./container-digest.js";
+export { type ContainerDigestVerification, type ContainerDigestVerificationResult } from "./container-digest.js";
+export * from "./carrier.js";
 export * from "./coverage.js";
 export * from "./integration-testing.js";
 export * from "./e2e-testing.js";
@@ -74,7 +75,6 @@ export * from "./storefront.js";
 export * from "./shipping.js";
 export * from "./merchantAnalytics.js";
 export * from "./storageRotation.js";
-export * from "./container-digest.js";
 export * from "./dlq.js";
 export * from "./storage.js";
 export * from "./feeEstimator.js";
