@@ -98,6 +98,16 @@ export {
 
 // ─── #45 Escrow Auto-Release on Delivery Confirmation ──────────────────────
 
+// ─── #505 Tax Calculation Engine ─────────────────────────────────────────────
+
+export { calculateTax } from "./tax/taxCalculator.js";
+export { validateTaxCalculationRequest } from "./tax/validation.js";
+export { validateVatIdFormat } from "./tax/vatIdValidator.js";
+export type { TaxCalculationParams, TaxCalculationResult } from "./tax/types.js";
+export { InvalidTaxParamsError, UnknownJurisdictionError } from "./tax/types.js";
+
+// ─── #45 Escrow Auto-Release on Delivery Confirmation ──────────────────────
+
 export { adminOverrideRelease, executeAutoRelease, handleDeliveryConfirmation } from "./autoRelease/service.js";
 
 // ─── #369 Automated Oracle Delivery Receipt Signing ────────────────────────
