@@ -235,7 +235,7 @@ describe("authenticateSessionKeyRequest", () => {
       expires_at: new Date(now + 60_000).toISOString(),
       spending_limit_stroops: "1000",
       spent_amount_stroops: "100",
-      max_per_call_stroops: "500",
+      max_per_call_stroops: "1000",
     } : overrides.row;
     return {
       database: {
@@ -246,7 +246,7 @@ describe("authenticateSessionKeyRequest", () => {
         eval: vi.fn().mockResolvedValue(overrides.allowanceResult ?? 1),
       },
       now: () => now,
-    };
+    } as any;
   }
 
   it("rejects a session key that is expired in the database", async () => {
