@@ -1,5 +1,5 @@
 /**
- * Session Key Authentication Middleware (Issue #TBD)
+ * Session Key Authentication Middleware (Issue #788)
  *
  * Validates cryptographic signatures from autonomous buyer agents using
  * delegated ephemeral Ed25519 keys. This middleware:
